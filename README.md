@@ -17,6 +17,8 @@ First ensure you have Node >=6.11.3 and Yarn >=1 installed. Clone the `spark` re
 
 ## Usage
 
+First clone and launch [spark-api][].
+
 Then you're ready to roll! Try out the npm/Yarn run scripts:
 
 * `npm start`: runs the app in development mode.
@@ -24,11 +26,12 @@ Then you're ready to roll! Try out the npm/Yarn run scripts:
 Note, you'll need ports 3000, 19000 and 19001 open for the development server, e.g.:
 
 ```shell
-iptables -A INPUT -p tcp --match multiport --dport 3000,19000,19001 -j ACCEPT
+iptables -I INPUT -p tcp --match multiport --dport 3000,19000,19001 -j ACCEPT
 ```
 
 See the Create React Native App [user guide][] for further usage.
 
+[spark-api]: https://github.com/tlvince/spark-api
 [user guide]: https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md
 
 ## Author
