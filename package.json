@@ -1,12 +1,8 @@
 {
   "name": "spark",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "IdeaMVC",
   "private": true,
-  "devDependencies": {
-    "react-native-scripts": "1.5.0",
-    "jest-expo": "^21.0.2",
-    "react-test-renderer": "16.0.0-alpha.12"
-  },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "start": "react-native-scripts start",
@@ -18,9 +14,27 @@
   "jest": {
     "preset": "jest-expo"
   },
+  "keywords": [
+    "idea",
+    "ideas",
+    "todomvc"
+  ],
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com)",
   "dependencies": {
     "expo": "^21.0.0",
     "react": "16.0.0-alpha.12",
-    "react-native": "^0.48.4"
-  }
+    "react-native": "^0.48.4",
+    "react-native-keyboard-spacer": "^0.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "jest-expo": "^21.0.2",
+    "react-native-scripts": "1.5.0",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "license": "Apache-2.0"
 }
